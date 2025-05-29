@@ -11,6 +11,9 @@ public class SM_Cuenta {
         this.numRetiros = 0;
     }
 
+    public SM_Cuenta() {
+    }
+
     public void depositar(float monto) {
         if (monto > 0) {
             saldo += monto;
