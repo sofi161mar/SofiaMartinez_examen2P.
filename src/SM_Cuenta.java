@@ -21,5 +21,26 @@ public class SM_Cuenta {
         }
     }
 
+    public void retirar(float monto) {
+        if (monto > 0 && monto <= saldo) {
+            saldo -= monto;
+            numRetiros=+numRetiros;
+            System.out.println("Retiro exitoso.");
+        } else {
+            System.out.println("Cantidad inválida o fondos insuficientes.");
 
+        }
+    }
+
+    public float getSaldo() {
+        return saldo;
+    }
+
+    public int getNumDepositos() {
+        return numDepositos;
+    }
+
+    public int getNumRetiros() {
+        return numRetiros;
+    }
 }
